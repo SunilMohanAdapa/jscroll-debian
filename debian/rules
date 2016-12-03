@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	uglifyjs -o jquery.jscroll.min.js jquery.jscroll.js
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f jquery.jscroll.min.js

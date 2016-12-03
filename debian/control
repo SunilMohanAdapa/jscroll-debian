@@ -1,0 +1,28 @@
+Source: jscroll
+Section: web
+Priority: optional
+Maintainer: FreedomBox Packaging Team <freedombox-pkg-team@lists.alioth.debian.org>
+Uploaders:
+ Sunil Mohan Adapa <sunil@medhas.org>,
+Build-Depends:
+ debhelper (>= 9),
+ node-uglify,
+Standards-Version: 3.9.8
+Homepage: http://jscroll.com/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/jquery-goodies.git
+Vcs-Git: git://git.debian.org/git/collab-maint/jquery-goodies.git
+
+
+Package: libjs-jquery-jscroll
+Architecture: all
+Depends:
+ ${misc:Depends},
+ libjs-jquery,
+Recommends: javascript-common
+Description: jQuery plugin for infinite scrolling
+ Infinite scrolling; also known as lazy loading, endless scrolling,
+ autopager, endless pages, etc.; is the ability to load content via
+ AJAX within the current page or content area as you scroll down. The
+ new content can be loaded automatically each time you scroll to the
+ end of the existing content, or it can be triggered to load by
+ clicking a navigation link at the end of the existing content.
